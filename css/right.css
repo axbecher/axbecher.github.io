@@ -17,7 +17,7 @@
     margin-top: -70px;
 }
 .right header nav ul{
-    position: absolute;
+    position: fixed;
     background: linear-gradient(to bottom, #256af3 0%, #3488f4 100%);
     border-radius: 20px 0px 0px 20px;
     display: inline-block;
@@ -41,7 +41,7 @@
     color: white;
 }
 .right header nav menu{
-    position: absolute;
+    position: fixed;
     z-index: 9;
     background: #3488f4;
     border-radius: 50%;
