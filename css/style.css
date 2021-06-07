@@ -67,6 +67,16 @@ section{
 .shadow_after:hover{
     box-shadow: 3px 3px 10px grey;
 }
+.tshadow_after_2{
+	text-decoration: underline;     
+	text-decoration-color: #5583B6;
+}
+
+.tshadow_after_2:hover, .tshadow_after_2:hover *{
+    text-shadow: 2px 2px 8px #256af3;
+    color: #5583B6;
+}
+
 .tshadow_after:hover, .tshadow_after:hover *{
     text-shadow: 2px 2px 8px #256af3;
     color: #d135ed;
@@ -122,3 +132,31 @@ section{
     background-color: #E0C91F;
 }
 /*Cookie Consent End*/
+
+.ToC_Content{
+	margin-top: 8%;
+}
+
+#toc_container {
+    background: #f9f9f9 none repeat scroll 0 0;
+    border: 1.3px solid #aaa;
+    display: table;
+    margin-bottom: 1em;
+    padding: 30px;
+    width: auto;
+}
+
+.toc_title {
+    font-weight: 900;
+    text-align: center;
+	margin-bottom: 15%;
+}
+
+#toc_container li, #toc_container ul, #toc_container ul li{
+    list-style: outside none none !important;
+	margin-bottom:3%;
+}
+#toc_list_2 li{
+	margin-left:30px;
+}
+/*ToC Consent End*/

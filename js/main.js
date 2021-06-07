@@ -11,3 +11,8 @@ $(document).ready(function(){
         $("#cookieConsent").fadeOut(200);
     }); 
 }); 
+
+var myDiv = document.getElementById("mesaj_news");
+  myDiv.innerHTML = "This website uses cookies from Google to analyze traffic.";
+  
+
