@@ -82,7 +82,7 @@
 }
 .right .desc p{
     line-height: 1.7em;
-    letter-spacing: .07em;
+    letter-spacing: .02em;
     font-size: .95em;
 }
 .right .detail{
@@ -113,7 +113,7 @@
     border-radius: 10px;
     padding: 20px;
     margin: 10px;
-    height: 60px;
+    height: 75px;
 }
 .right .details .details-p.portfolio{
     height: unset;
@@ -127,7 +127,7 @@
 .right .details .details-p img{
     width: 40px;
     float: left;
-    margin: 10px 15px 20px 0px;
+    margin: 5px 15px 5px 0px;
 }
 .right .details .details-p.portfolio img{
     width: calc(100% + 40px);
@@ -138,7 +138,7 @@
 .right .skills .details .details-p img{
     width: unset;
     max-width: 130px;
-    height: 70px;
+    height: 90px;
     float: unset;
     margin: 10px 0 20px 0;
 }
@@ -152,10 +152,10 @@
     margin: -5px 0 5px 0 !important;
 }
 .right .details .details-p.portfolio .details-t{
-    font-size: 1.3em;
+    font-size: 1.4em;
 }
 .right .details .details-d{
-    font-size: .8em;
+    font-size: 0.8em;
     color: #6e7e91;
     margin: 10px 0;
 }
