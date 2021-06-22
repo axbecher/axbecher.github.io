@@ -13,6 +13,18 @@ $(document).ready(function(){
 }); 
 
 var myDiv = document.getElementById("mesaj_news");
-  myDiv.innerHTML = "This website uses cookies from Google to analyze traffic.";
+myDiv.innerHTML = "This website uses cookies from Google to analyze traffic.";
+
+
+// Open mobile menu
+$('#mobile-menu-open').click(function () {
+    $('header, body').addClass('active');
+});
+
+// Close mobile menu
+$('#mobile-menu-close').click(function () {
+    $('header, body').removeClass('active');
+});
+
   
 
