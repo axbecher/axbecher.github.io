@@ -3,8 +3,9 @@
     "",
     "\\css",
     "\\images",
-    "\\images\\personality"
+    "\\images\\personality",
+    "\\js"
   ],
-  "SelectedNode": "\\portfolio.html",
+  "SelectedNode": "\\js\\main.js",
   "PreviewInSolutionExplorer": false
 }

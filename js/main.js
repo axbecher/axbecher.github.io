@@ -15,7 +15,6 @@ $(document).ready(function(){
 var myDiv = document.getElementById("mesaj_news");
 myDiv.innerHTML = "This website uses cookies from Google to analyze traffic.";
 
-
 // Open mobile menu
 $('#mobile-menu-open').click(function () {
     $('header, body').addClass('active');
