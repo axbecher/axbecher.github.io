@@ -1,11 +1,11 @@
 {
   "ExpandedNodes": [
     "",
-    "\\css",
-    "\\images",
-    "\\images\\personality",
-    "\\js"
+    "\\assets",
+    "\\assets\\css",
+    "\\Portofoliu",
+    "\\Postari"
   ],
-  "SelectedNode": "\\js\\main.js",
+  "SelectedNode": "\\Portofoliu\\viewhere.html",
   "PreviewInSolutionExplorer": false
 }
