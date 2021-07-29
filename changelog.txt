@@ -1,5 +1,0 @@
-Version: 1.0.0 in 29.07.2021
-  - 
-
-Version: 1.0.0
-  - Initial Release on Axbecher.github.io
