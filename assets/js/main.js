@@ -175,6 +175,14 @@
       }
     }
   });
+    
+  /**
+  * Footer version control - Copyrights
+  */
+    
+  var copyright_text = document.getElementById("copyright_footer");
+  var version = "v1.0.1";
+    copyright_text.innerHTML = " &copy; Copyrights 2021 Axbecher. All rights reserved. " + version;
 
   /**
    * Hero type effect
