@@ -25,5 +25,3 @@ Initial release on axbecher.github.io
 
 #### Bug Fixes
 > - 
-
-______
