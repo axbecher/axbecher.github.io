@@ -60,15 +60,15 @@
             <h1 class="logo"><a href="/">Axbecher</a></h1>
 
             <nav id="navbar" class="navbar">
-                <ul>
-                    <li><a class="nav-link scrollto active" href="/">Home</a></li>
-                    <li><a class="nav-link scrollto" href="#about">About</a></li>
-                    <li><a class="nav-link scrollto" href="#portfolio">Portfolio</a></li>
-                    <li><a class="nav-link scrollto" href="#blog">Blog</a></li>
+                <ul id="indexHeader">
+                    <li><a class="nav-link scrollto active" href="/">Home</a></li> 
+                    <li><a class="nav-link scrollto" href="#about">About</a></li> 
+                    <li><a class="nav-link scrollto" href="#portfolio">Portfolio</a></li> 
+                    <li><a class="nav-link scrollto" href="#blog">Blog</a></li> 
                     <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
                 </ul>
                 <i class="bi bi-list mobile-nav-toggle"></i>
-            </nav><!-- .navbar -->
+            </nav>
 
         </div>
     </header><!-- End Header -->
@@ -77,8 +77,7 @@
 
         <div class="container">
             <div class="hero-content">
-                <h1>I'm <span class="typed" data-typed-items="Alexandru Becher, Entry Level Game Developer, Junior Software Developer, Freelancer"></span></h1>
-                <!-- <p>Entry Level Game Developer, Junior Software Developer, Freelancer</p> -->
+                <h1>I'm <span class="typed" data-typed-items="Alexandru Becher, Freelancer, Entry level Software Developer, Entry level Game Developer, Frontend Developer"></span></h1>
 
             </div>
         </div>
@@ -103,7 +102,7 @@
 
                     <div class="col-lg-7">
                         <div class="about-descr">
-                            <p class="p-heading">From an ex-gamer to a game developer</p>
+                            <p class="p-heading"><strong>From an ex-gamer to a software developer</strong></p>
                             <p class="separator">
                                 Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.
                                 It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.
@@ -122,7 +121,23 @@
 
                 <div class="services-slider swiper-container" data-aos="fade-up" data-aos-delay="100">
                     <div class="swiper-wrapper">
-
+                        
+                        <div class="swiper-slide">
+                            <div class="services-block">
+                                <i class="bi bi-controller"></i>
+                                <span>GAME DEVELOPMENT</span>
+                                <p class="separator">To an English person, it will seem like simplified English,told me what </p>
+                            </div>
+                        </div><!-- End testimonial item -->
+                        
+                        <div class="swiper-slide">
+                            <div class="services-block">
+                                <i class="bi bi-terminal"></i>
+                                <span>SOFTWARE DEVELOPMENT</span>
+                                <p class="separator">To an English person, it will seem like simplified English,told me what </p>
+                            </div>
+                        </div><!-- End testimonial item -->
+                        
                         <div class="swiper-slide">
                             <div class="services-block">
                                 <i class="bi bi-briefcase"></i>
@@ -142,31 +157,23 @@
                         <div class="swiper-slide">
                             <div class="services-block">
                                 <i class="bi bi-bar-chart"></i>
-                                <span>WEB DESIGN</span>
+                                <span>WEB DEVELOPMENT</span>
                                 <p class="separator">To an English person, it will seem like simplified English,told me what </p>
                             </div>
                         </div><!-- End testimonial item -->
 
                         <div class="swiper-slide">
                             <div class="services-block">
-                                <i class="bi bi-binoculars"></i>
-                                <span>MOBILE APPS</span>
+                                <i class="bi bi-joystick"></i>
+                                <span>GAMING</span>
                                 <p class="separator">To an English person, it will seem like simplified English,told me what </p>
                             </div>
                         </div><!-- End testimonial item -->
 
                         <div class="swiper-slide">
                             <div class="services-block">
-                                <i class="bi bi-brightness-high"></i>
-                                <span>Analytics</span>
-                                <p class="separator">To an English person, it will seem like simplified English,told me what </p>
-                            </div>
-                        </div><!-- End testimonial item -->
-
-                        <div class="swiper-slide">
-                            <div class="services-block">
-                                <i class="bi bi-calendar4-week"></i>
-                                <span>PHOTOGRAPHY</span>
+                                <i class="bi bi-mic-mute"></i>
+                                <span>EXTROVERT</span>
                                 <p class="separator">To an English person, it will seem like simplified English,told me what </p>
                             </div>
                         </div><!-- End testimonial item -->
@@ -202,48 +209,58 @@
 
                 <div class="row portfolio-container">
 
-                    <div class="col-lg-4 col-md-6 portfolio-item filter-webDev">
-                        <img src="assets/img/portfolio/viewhere/viewhere.png" class="img-fluid" alt="" loading="lazy">
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-webDev ">
+                        <img src="assets/img/portfolio/viewhere/viewhere-promo.png" class="img-fluid" alt="">
                         <div class="portfolio-info">
                             <h4>Viewhere - LEADERS Explore</h4>
                             <p>The platform through which you can find the events that interest you.</p>
-                            <a href="./portfolio/viewhere/" class="details-link" title="More Details"><i class="bx bx-detail"></i></a>
+                            <div class="d-flex justify-content-center info-box-portfolio">
+                                        <a href="./portfolio/viewhere/"><h2>MORE DETAILS</h2></a>
+                            </div>
                         </div>
                     </div>
 
                     <div class="col-lg-4 col-md-6 portfolio-item filter-webDev">
-                        <img src="assets/img/portfolio/SkillsDistrict/skillsDistrict.png" class="img-fluid" alt="" loading="lazy">
+                        <img src="assets/img/portfolio/SkillsDistrict/skillsDistrict-promo.png" class="img-fluid" alt="">
                         <div class="portfolio-info">
                             <h4>Skills District - Brighthub</h4>
                             <p>The platform through which you instantly find someone eager to help you learn.</p>
-                            <a href="./portfolio/skillsdistrict" class="details-link" title="More Details"><i class="bx bx-detail"></i></a>
+                            <div class="d-flex justify-content-center info-box-portfolio">
+                                        <a href="./portfolio/skillsdistrict"><h2>MORE DETAILS</h2></a>
+                            </div>
                         </div>
                     </div>
 
                     <div class="col-lg-4 col-md-6 portfolio-item filter-webDev">
-                        <img src="assets/img/portfolio/axellsHub/axellsHub.png" class="img-fluid" alt="" loading="lazy">
+                        <img src="assets/img/portfolio/axellsHub/axellsHub-promo.png" class="img-fluid" alt="">
                         <div class="portfolio-info">
                             <h4>Axell's Hub - eCommerce Website</h4>
                             <p>Did you finish that game hard but feel like you want another challenge?</p>
-                            <a href="./portfolio/ecomweb" class="details-link" title="More Details"><i class="bx bx-detail"></i></a>
+                            <div class="d-flex justify-content-center info-box-portfolio">
+                                        <a href="./portfolio/ecomweb/"><h2>MORE DETAILS</h2></a>
+                            </div>
                         </div>
                     </div>
 
                     <div class="col-lg-4 col-md-6 portfolio-item filter-in-dezvoltare">
-                        <img src="assets/img/portfolio/axbecherOldGithub/axbecherOldGithub.png" class="img-fluid" alt="" loading="lazy">
+                        <img src="assets/img/portfolio/axbecherOldGithub/axbecherOldGithub-promo.png" class="img-fluid" alt="" >
                         <div class="portfolio-info">
                             <h4>Axbecher - Old Personal Website</h4>
                             <p>The first version of the personal site, intended as a portfolio.</p>
-                            <a href="./404" class="details-link" title="More Details"><i class="bx bx-detail"></i></a>
+                            <div class="d-flex justify-content-center info-box-portfolio">
+                                        <a href="./404"><h2>MORE DETAILS</h2></a>
+                            </div>
                         </div>
                     </div>
 
                     <div class="col-lg-4 col-md-6 portfolio-item filter-in-dezvoltare">
-                        <img src="assets/img/portfolio/FelineRun/FelineRun.png" class="img-fluid" alt="" loading="lazy">
+                        <img src="assets/img/portfolio/FelineRun/FelineRun-promo.png" class="img-fluid" alt="" loading="lazy">
                         <div class="portfolio-info">
                             <h4>Feline Run</h4>
                             <p>Hyper.Play is the first game jam for hyper casual games ever organized in Romania.</p>
-                            <a href="./404" class="details-link" title="More Details"><i class="bx bx-detail"></i></a>
+                            <div class="d-flex justify-content-center info-box-portfolio">
+                                        <a href="./404"><h2>MORE DETAILS</h2></a>
+                            </div>
                         </div>
                     </div>
 
@@ -255,6 +272,8 @@
 
         </div><!-- End Portfolio Section -->
         <!-- ======= Journal Section ======= -->
+        
+        <!-- 
         <div id="blog" class="text-left paddsection">
 
             <div class="container">
@@ -333,8 +352,9 @@
                     </div>
                 </div>
             </div>
-
-        </div><!-- End Journal Section -->
+        
+        </div>--> 
+        <!-- End Journal Section -->
         <!-- ======= Contact Me Section ======= -->
         <section id="contact" class="contact">
             <div class="container">
@@ -386,7 +406,7 @@
                             <div class="container-iframe">
                                 <!--<iframe id="if1" width="100%" height="254" style="visibility:visible" src="http://www.google.com/custom?q=&btnG=Search"></iframe>-->
 
-                                <iframe class="responsive-iframe" src="https://docs.google.com/forms/d/e/1FAIpQLScyag_qZ8iJwhZMKzXw3Ej0G9ymG1k_6bcWmTP3uq8CwbK9Rg/viewform?embedded=true" width="100%" height="560" frameborder="0" marginheight="0" marginwidth="0">Still loading…</iframe>
+                                <iframe style="filter: invert(90%)" class="responsive-iframe" src="https://docs.google.com/forms/d/e/1FAIpQLScyag_qZ8iJwhZMKzXw3Ej0G9ymG1k_6bcWmTP3uq8CwbK9Rg/viewform?embedded=true" width="100%" height="560" frameborder="0" marginheight="0" marginwidth="0">Still loading…</iframe>
                             </div>
                         </div>
 
@@ -415,9 +435,9 @@
 
             <p id="copyright_footer">This paragraph is modified using javascript. </p>
 
-            <div class="credits">
+            <div id="design_by_footer" class="credits">
 
-                Designed using <a class="link-footer-bootstrap" href="https://www.w3schools.com/bootstrap/bootstrap_get_started.asp" target="_blank">Bootstrap 5</a>
+                This paragraph is modified using javascript.
             </div>
 
         </div>

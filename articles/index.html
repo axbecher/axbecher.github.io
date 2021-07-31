@@ -46,7 +46,7 @@
             <!-- <h1 class="logo"><a href="index.html">Folio</a></h1> -->
 
             <nav id="navbar" class="navbar">
-                <ul>
+                <ul id="allArticlesHeader">
                     <li><a class="nav-link scrollto " href="../">Home</a></li>
                     <li><a class="nav-link scrollto" href="../#about">About</a></li>
                     <li><a class="nav-link  scrollto" href="../#portfolio">Portfolio</a></li>
@@ -75,79 +75,155 @@
 
     <main id="main">
 
-        <!-- ======= Blog Grid ======= -->
-        <div id="journal-blog" class="text-left  paddsections">
+        <!-- ======= Portfolio Section ======= -->
+      <div id="portfolio" class="paddsection">
 
-            <div class="container">
-                <div class="section-title text-center">
-                    <h2>Articles</h2>
-                </div>
-            </div>
+          <div class="container">
+              <div class="section-title text-center">
+                  <h2>My Portfolio</h2>
+              </div>
+          </div>
 
-            <div class="container">
-                <div class="journal-block">
-                    <div class="row">
+          <div class="container">
 
-                        <div class="col-lg-4 col-md-6">
-                            <div class="journal-info mb-30">
+              <div class="row">
+                  <div class="col-lg-12 d-flex justify-content-center">
+                      <ul id="portfolio-flters">
+                          <li data-filter="*" class="filter-active">All</li>
+                          <li data-filter=".filter-gameDev">Game Dev</li>
+                          <li data-filter=".filter-webDev">Web Dev</li>
+                          <li data-filter=".filter-ux-ui-design">UX/UI Design</li>
+                          <li data-filter=".filter-graphic-design">Graphic Design</li>
+                          <li data-filter=".filter-copywriting">Copywriting</li>
+                          <li data-filter=".filter-in-dezvoltare">In progress</li>
+                      </ul>
+                  </div>
+              </div>
 
-                                <a href="article1/"><img src="../assets/img/blog-post-1.jpg" class="img-responsive" alt="img" loading="lazy"></a>
+              <div class="row portfolio-container journal-info mb-30">
 
-                                <div class="journal-txt">
+                  <div class="col-lg-4 col-md-6 portfolio-item filter-webDev">
+                      <a href="../../Blog/p1-fara-schimbare-am-fi-un-nimeni/"> <img src="../assets/img/articles/blog-post-1.jpg" class="img-fluid" alt="" ></a>
+                      <div class="journal-txt">
 
-                                    <h4><a href="article1/">First article!</a></h4>
-                                    <p class="separator">
-                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
-                                    </p>
+                                  <h4><a href="../../Blog/p1-fara-schimbare-am-fi-un-nimeni/">Exprimă-te prin artă</a></h4>
+                                  <p class="separator">
+                                      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                                  </p>
 
-                                </div>
+                              </div>
+                  </div>
 
-                            </div>
-                        </div>
+                  <div class="col-lg-4 col-md-6 portfolio-item filter-gameDev">
+                      <a href="../../Blog/p1-fara-schimbare-am-fi-un-nimeni/"> <img src="../assets/img/articles/blog-post-1.jpg" class="img-fluid" alt="" ></a>
+                      <div class="journal-txt">
 
-                        <div class="col-lg-4 col-md-6">
-                            <div class="journal-info mb-30">
+                                  <h4><a href="../../Blog/p2-exprima-te-prin-arta/">Exprimă-te prin artă</a></h4>
+                                  <p class="separator">
+                                      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                                  </p>
 
-                                <a href="../404/"><img src="../assets/img/portfolio/notYet.png" class="img-responsive" alt="img" loading="lazy"></a>
+                              </div>
+                  </div>
 
-                                <div class="journal-txt">
+                  
+                  
+                  <div class="col-lg-4 col-md-6 portfolio-item filter-gameDev">
+                      <a href="../../Blog/p1-fara-schimbare-am-fi-un-nimeni/"> <img src="../assets/img/articles/blog-post-1.jpg" class="img-fluid" alt="" ></a>
+                      <div class="journal-txt">
 
-                                    <h4><a href="../404/">Second Article!</a></h4>
-                                    <p class="separator">
-                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
-                                    </p>
+                                  <h4><a href="../../Blog/p2-exprima-te-prin-arta/">Exprimă-te prin artă</a></h4>
+                                  <p class="separator">
+                                      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                                  </p>
 
-                                </div>
+                              </div>
+                  </div>
+                  
+                  <div class="col-lg-4 col-md-6 portfolio-item filter-gameDev">
+                      <a href="../../Blog/p1-fara-schimbare-am-fi-un-nimeni/"> <img src="../assets/img/articles/blog-post-1.jpg" class="img-fluid" alt="" ></a>
+                      <div class="journal-txt">
 
-                            </div>
-                        </div>
+                                  <h4><a href="../../Blog/p2-exprima-te-prin-arta/">Exprimă-te prin artă</a></h4>
+                                  <p class="separator">
+                                      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                                  </p>
 
+                              </div>
+                  </div>
 
+                  <div class="col-lg-4 col-md-6 portfolio-item filter-gameDev">
+                      <a href="../../Blog/p1-fara-schimbare-am-fi-un-nimeni/"> <img src="../assets/img/articles/blog-post-1.jpg" class="img-fluid" alt="" ></a>
+                      <div class="journal-txt">
 
-                        <!-- Exemplu -->
-                        <!--<div class="col-lg-4 col-md-6">
-                          <div class="journal-info mb-30">
+                                  <h4><a href="../../Blog/p2-exprima-te-prin-arta/">Exprimă-te prin artă</a></h4>
+                                  <p class="separator">
+                                      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                                  </p>
 
-                            <a href="postare1.html"><img src="assets/img/blog-post-2.jpg" class="img-responsive" alt="img" loading="lazy"></a>
+                              </div>
+                  </div>
 
-                            <div class="journal-txt">
+                  
+                  
+                  <div class="col-lg-4 col-md-6 portfolio-item filter-gameDev">
+                      <a href="../../Blog/p1-fara-schimbare-am-fi-un-nimeni/"> <img src="../assets/img/articles/blog-post-1.jpg" class="img-fluid" alt="" ></a>
+                      <div class="journal-txt">
 
-                              <h4><a href="postare1.html">BLOG TITLE</a></h4>
-                              <p class="separator">BLOG DESCRIPTION
-                              </p>
+                                  <h4><a href="../../Blog/p2-exprima-te-prin-arta/">Exprimă-te prin artă</a></h4>
+                                  <p class="separator">
+                                      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                                  </p>
 
-                            </div>
+                              </div>
+                  </div>
+                  
+                  <div class="col-lg-4 col-md-6 portfolio-item filter-gameDev">
+                      <a href="../../Blog/p1-fara-schimbare-am-fi-un-nimeni/"> <img src="../assets/img/articles/blog-post-1.jpg" class="img-fluid" alt="" ></a>
+                      <div class="journal-txt">
 
-                          </div>
-                        </div>-->
-                        <!-- -->
+                                  <h4><a href="../../Blog/p2-exprima-te-prin-arta/">Exprimă-te prin artă</a></h4>
+                                  <p class="separator">
+                                      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                                  </p>
 
+                              </div>
+                  </div>
 
+                  <div class="col-lg-4 col-md-6 portfolio-item filter-gameDev">
+                      <a href="../../Blog/p1-fara-schimbare-am-fi-un-nimeni/"> <img src="../assets/img/articles/blog-post-1.jpg" class="img-fluid" alt="" ></a>
+                      <div class="journal-txt">
 
-                    </div>
-                </div>
-            </div>
-        </div><!-- End Blog Grid -->
+                                  <h4><a href="../../Blog/p2-exprima-te-prin-arta/">Exprimă-te prin artă</a></h4>
+                                  <p class="separator">
+                                      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                                  </p>
+
+                              </div>
+                  </div>
+
+                  
+                  
+                  <div class="col-lg-4 col-md-6 portfolio-item filter-gameDev">
+                      <a href="../../Blog/p1-fara-schimbare-am-fi-un-nimeni/"> <img src="../assets/img/articles/blog-post-1.jpg" class="img-fluid" alt="" ></a>
+                      <div class="journal-txt">
+
+                                  <h4><a href="../../Blog/p2-exprima-te-prin-arta/">Exprimă-te prin artă</a></h4>
+                                  <p class="separator">
+                                      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                                  </p>
+
+                              </div>
+                  </div>
+                  
+
+                  
+
+              </div>
+
+          </div>
+
+      </div><!-- End Portfolio Section -->
 
     </main><!-- End #main -->
     <!-- ======= Footer ======= -->
@@ -157,9 +233,9 @@
 
             <p id="copyright_footer">This paragraph is modified using javascript. </p>
 
-            <div class="credits">
+            <div id="design_by_footer" class="credits">
 
-                Designed using <a class="link-footer-bootstrap" href="https://www.w3schools.com/bootstrap/bootstrap_get_started.asp" target="_blank">Bootstrap 5</a>
+                This paragraph is modified using javascript.
             </div>
 
         </div>

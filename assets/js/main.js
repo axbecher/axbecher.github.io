@@ -180,10 +180,54 @@
   * Footer version control - Copyrights
   */
     
-  var copyright_text = document.getElementById("copyright_footer");
-  var version = "v1.0.1";
+    var copyright_text = document.getElementById("copyright_footer");
+    var version = "<i> v1.0.2 </i>";
     copyright_text.innerHTML = " &copy; Copyrights 2021 Axbecher. All rights reserved. " + version;
+    
+    var design_by_text = document.getElementById("design_by_footer");
+    design_by_text.innerHTML = 'Designed using <a class="link-footer-bootstrap" href="https://www.w3schools.com/bootstrap4/" target="_blank">Bootstrap 4</a>';
 
+    /**
+    * Header Controller
+    */
+    
+    if(document.getElementById("indexHeader")) { /* Home / Root / Index Header  '<li><a class="nav-link active  scrollto" href="../../#blog">Blog</a></li>'*/
+  document.getElementById("indexHeader").innerHTML = 
+                            '<li><a class="nav-link scrollto active" href="/">Home</a></li>' + 
+                            '<li><a class="nav-link scrollto" href="#about">About</a></li>' + 
+                            '<li><a class="nav-link scrollto" href="#portfolio">Portfolio</a></li>' + 
+                            '<li><a class="nav-link scrollto" href="#contact">Contact</a></li>';
+}  
+    
+    if(document.getElementById("portfolioHeader")) { /* Portfolio, viewhere,skillsdistrict,ecomweb  Header */
+  document.getElementById("portfolioHeader").innerHTML = 
+                            '<li><a class="nav-link scrollto" href="../../">Home</a></li>' + 
+                            '<li><a class="nav-link scrollto" href="../../#about">About</a></li>' + 
+                            '<li><a class="nav-link scrollto active" href="../../#portfolio">Portfolio</a></li>' + 
+                            '<li><a class="nav-link scrollto" href="../../#contact">Contact</a></li>';
+}  
+    
+    if(document.getElementById("allArticlesHeader")) { /* Where are all Articles  Header */
+  document.getElementById("allArticlesHeader").innerHTML = 
+                            '<li><a class="nav-link scrollto" href="../">Home</a></li>' + 
+                            '<li><a class="nav-link scrollto" href="../#about">About</a></li>' + 
+                            '<li><a class="nav-link scrollto active" href="../#portfolio">Portfolio</a></li>' + 
+                            '<li><a class="nav-link scrollto" href="../#contact">Contact</a></li>';
+}  
+    
+    if(document.getElementById("articleInfoHeader")) { /* Articles Info Header - Article 1, article 2 */
+  document.getElementById("articleInfoHeader").innerHTML = 
+                            '<li><a class="nav-link scrollto" href="../../">Home</a></li>' + 
+                            '<li><a class="nav-link scrollto" href="../../#about">About</a></li>' + 
+                            '<li><a class="nav-link scrollto" href="../../#portfolio">Portfolio</a></li>' + 
+                            '<li><a class="nav-link scrollto" href="../../#contact">Contact</a></li>';
+}  
+    
+    
+    
+    
+    
+    
   /**
    * Hero type effect
    */

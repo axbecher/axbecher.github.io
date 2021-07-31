@@ -1,6 +1,24 @@
 # Version Log
 **The version log history will be kept in this file.**
 
+### v.1.0.2
+
+#### New Features
+> - Added Dark Theme colors in `style.css` for future usage;
+> - Footer is now modified from javascript;
+> - Header is now modified from javascript;
+> - Added button for MORE DETAILS in `portfolio item`
+> - Version tracking in `all pages/footer` ( using javascript );
+
+#### Changes
+> - Resize and blur portfolio images;
+> - Change `main page` background image color to match dark theme;
+> - Remove Article section temporarily;
+
+
+#### Bug Fixes
+> - Resize and center Article Photos
+
 ### v.1.0.1
 
 #### New Features
