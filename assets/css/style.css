@@ -1427,10 +1427,18 @@ background: var(--third-dark-txt-color);
 
 blockquote {
   padding: 40px;
-  background-color: var(--main-dark-txt-color);
+  background-color: var(--secondary-dark-txt-color);
   margin: 30px 0;
   border: none;
   border-left: 4px solid var(--main-dark-bg-color);
+}
+
+blockquote li{
+    color: var(--main-dark-bg-color);
+}
+
+blockquote code{
+    color: var(--main-dark-inactive-link-color);
 }
 
 /*--------------------------------------------------------------
