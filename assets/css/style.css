@@ -2,6 +2,7 @@
     /* Dark theme colors */
     
     --main-dark-bg-color: #121212;
+    --secondary-dark-bg-color: #222222;
     --main-dark-txt-color: #F28500;
     --secondary-dark-txt-color: #808080;
     --third-dark-txt-color: #FFFDD0;
@@ -1427,14 +1428,14 @@ background: var(--third-dark-txt-color);
 
 blockquote {
   padding: 40px;
-  background-color: var(--secondary-dark-txt-color);
+  background-color: var(--secondary-dark-bg-color);
   margin: 30px 0;
   border: none;
   border-left: 4px solid var(--main-dark-bg-color);
 }
 
 blockquote li{
-    color: var(--main-dark-bg-color);
+    color: var(--third-dark-txt-color);
 }
 
 blockquote code{
