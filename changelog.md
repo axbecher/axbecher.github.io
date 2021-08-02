@@ -1,6 +1,18 @@
 # Version Log
 **The version log history will be kept in this file.**
 
+### v.1.0.3
+
+#### New Features
+> - Added `version control in footer` hyperlink to `changelog.md`
+
+#### Changes
+> - Change changelog colors
+
+
+#### Bug Fixes
+> - 
+
 ### v.1.0.2
 
 #### New Features

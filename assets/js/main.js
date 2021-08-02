@@ -175,7 +175,7 @@
   */
     
     var copyright_text = document.getElementById("copyright_footer");
-    var version = "<i> v1.0.2 </i>";
+    var version = '<a href="https://axbecher.com/changelog"> <i> v1.0.3 </i> </a>';
     copyright_text.innerHTML = " &copy; Copyrights 2021 Axbecher. All rights reserved. " + version;
     
     var design_by_text = document.getElementById("design_by_footer");
