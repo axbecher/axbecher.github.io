@@ -122,6 +122,8 @@
     onscroll(document, toggleBacktotop)
   }
 
+    
+    
   /**
    * Mobile nav toggle
    */
@@ -129,8 +131,11 @@
     select('#navbar').classList.toggle('navbar-mobile')
     this.classList.toggle('bi-list')
     this.classList.toggle('bi-x')
+    
   })
+    
 
+    
   /**
    * Mobile nav dropdowns activate
    */
@@ -142,7 +147,7 @@
   }, true)
 
   /**
-   * Scrool with ofset on links with a class name .scrollto
+   * Scroll with ofset on links with a class name .scrollto
    */
   on('click', '.scrollto', function(e) {
     if (select(this.hash)) {
@@ -151,7 +156,7 @@
       let navbar = select('#navbar')
       if (navbar.classList.contains('navbar-mobile')) {
         navbar.classList.remove('navbar-mobile')
-        let navbarToggle = select('.mobile-nav-toggle')
+    let navbarToggle = select('.mobile-nav-toggle')
         navbarToggle.classList.toggle('bi-list')
         navbarToggle.classList.toggle('bi-x')
       }
@@ -175,7 +180,7 @@
   */
     
     var copyright_text = document.getElementById("copyright_footer");
-    var version = '<a href="https://axbecher.com/changelog"> <i> v1.0.2-2 </i> </a>';
+    var version = '<a href="../../changelog/"> <i> v1.0.2-3 </i> </a>';
     copyright_text.innerHTML = " &copy; Copyrights 2021 Axbecher. All rights reserved. " + version;
     
     var design_by_text = document.getElementById("design_by_footer");
@@ -184,6 +189,8 @@
     /**
     * Header Controller
     */
+    
+    
     
     if(document.getElementById("indexHeader")) { /* Home / Root / Index Header  '<li><a class="nav-link active  scrollto" href="../../#blog">Blog</a></li>'*/
   document.getElementById("indexHeader").innerHTML = 
@@ -201,7 +208,7 @@
                             '<li><a class="nav-link scrollto" href="../../#contact">Contact</a></li>';
 }  
     
-    if(document.getElementById("allArticlesHeader")) { /* Where are all Articles  Header */
+    if(document.getElementById("allArticlesHeader")) { /* Where are all Articles + changelog Header */
   document.getElementById("allArticlesHeader").innerHTML = 
                             '<li><a class="nav-link scrollto" href="../">Home</a></li>' + 
                             '<li><a class="nav-link scrollto" href="../#about">About</a></li>' + 
@@ -239,7 +246,7 @@
   }
 
   /**
-   * Testimonials slider
+   * Services slider
    */
   new Swiper('.services-slider', {
     speed: 600,

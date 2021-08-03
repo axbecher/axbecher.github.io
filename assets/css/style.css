@@ -61,6 +61,13 @@ a {
   transition: all 0.5s ease-in-out 0s;
 }
 
+.isDisabled{
+    color: var(--secondary-dark-txt-color);
+    cursor: not-allowed;
+    opacity: 0.5;
+    text-decoration: none;
+}
+
 a:hover {
   transition: all 0.5s ease-in-out 0s;
     color: var(--main-dark-active-link-color);
@@ -170,7 +177,7 @@ p {
     right: 15px;
     bottom: 15px;
     z-index: 996;
-    background: #3498db;
+    background: var(--main-dark-inactive-link-color);
     width: 40px;
     height: 40px;
     border-radius: 4px;
@@ -179,13 +186,13 @@ p {
 
 .back-to-top i {
   font-size: 28px;
-  color: #fff;
+  color: var(--main-dark-bg-color);
   line-height: 0;
 }
 
 .back-to-top:hover {
-  background: #c6b398;
-  color: #fff;
+  background: var(--main-dark-txt-color);
+  color: var(--main-dark-bg-color);
 }
 
 .back-to-top.active {
@@ -202,7 +209,8 @@ p {
   padding: 15px 0;
   background-color: var(--main-dark-header-bg-color);
   top: -100%;
-  box-shadow: 0px 2px 25px rgba(0, 0, 0, 0.08);
+  /*box-shadow: 0px 2px 25px rgba(0, 0, 0, 0.08);*/
+    box-shadow: 0px 4px 8px rgba(186, 142, 107, 0.09);
 }
 
 #header.header-scrolled, #header.header-inner-pages {
@@ -394,19 +402,22 @@ p {
   left: 15px;
   padding: 10px 0;
   border-radius: 10px;
-  background-color: #fff;
+  background-color: var(--main-dark-bg-color);
   overflow-y: auto;
   transition: 0.3s;
+
 }
 
+
 .navbar-mobile a {
+display: block;
   padding: 10px 20px;
-  font-size: 15px;
-  color: #4b4a4a;
+  font-size: 18px;
+  color: var(--main-dark-inactive-link-color);
 }
 
 .navbar-mobile a:hover, .navbar-mobile .active, .navbar-mobile li:hover > a {
-  color: #b8a07e;
+  color: var(--main-dark-active-link-color);
 }
 
 .navbar-mobile .getstarted {
@@ -414,7 +425,7 @@ p {
 }
 
 .navbar-mobile .dropdown ul {
-  position: static;
+  position: absolute;
   display: none;
   margin: 10px 20px;
   padding: 10px 0;
@@ -592,6 +603,11 @@ background: var(--main-dark-txt-color);
   min-height: 40px;
 }
 
+code{
+    color: var(--main-dark-inactive-link-color);
+    font-size: 16px;
+}
+
 @media (max-width: 992px) {
   .breadcrumbs {
     padding-top: 100px;
@@ -605,7 +621,7 @@ background: var(--main-dark-txt-color);
 }
 
 .breadcrumbs_txt{
-    color: var(third-dark-txt-color);
+    color: var(--third-dark-txt-color);
 }
 
 @media (max-width: 992px) {
@@ -710,6 +726,10 @@ background: var(--main-dark-txt-color);
 
 .services-block{
     box-shadow: 0px 3px 1px rgb(242 133 0 / 60%);
+    background-color: rgb(242 133 0 / 3%);
+    height: 140px;
+    width: 100%;
+    padding: 5px 10px;
 }
 
 .services-block .separator {
@@ -750,6 +770,11 @@ background: var(--main-dark-txt-color);
 #portfolio {
   position: relative;
   padding-bottom: 50px;
+}
+
+
+.blurAx{
+    filter: blur(3px);
 }
 
 #portfolio #portfolio-flters {
