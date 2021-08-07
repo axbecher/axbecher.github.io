@@ -355,7 +355,7 @@ p {
 * Mobile Navigation 
 */
 .mobile-nav-toggle {
-  color: #4b4a4a;
+  color:var(--main-dark-inactive-link-color);
   font-size: 28px;
   cursor: pointer;
   display: none;
@@ -864,8 +864,8 @@ code{
     font-size: 15px;
     display: grid;
     color: var(--main-dark-bg-color);
-  border: 2px solid var(--main-dark-bg-color);
-background: var(--six-dark-txt-color);
+    border: 2px solid var(--main-dark-bg-color);
+    background: var(--six-dark-txt-color);
     border-radius: 20px;
     align-items: center;
     justify-content: space-between;
@@ -891,6 +891,32 @@ background: var(--main-dark-txt-color);
 .portfolio-details {
   padding-top: 40px;
 }
+
+.portfolio-certificate h2{
+    margin: 0 10px 0 10px;
+    font-size: 15px;
+    color: var(--main-dark-bg-color);
+    border: 2px solid var(--main-dark-bg-color);
+    background: var(--six-dark-txt-color);
+    border-radius: 8px;  
+    justify-content: space-between;
+    padding: 5px 10px 10px 10px; 
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.portfolio-certificate h2:hover{
+  margin: 0 10px 0 10px;
+  font-size: 15px;
+  color: #fff;
+border: 2px solid var(--third-dark-txt-color);
+background: var(--main-dark-txt-color);
+  border-radius: 8px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 10px 10px 10px; 
+}
+
 
 .portfolio-details .portfolio-details-slider img {
   width: 100%;
@@ -1342,7 +1368,7 @@ background: var(--third-dark-txt-color);
 
 /* main content */
 .main-content {
-  background: #f7f7f7;
+  background: none;
 }
 
 .main-content .container-main {
