@@ -180,7 +180,7 @@
   */
     
     var copyright_text = document.getElementById("copyright_footer");
-    var version = '<a href="../../changelog/"> <i> v1.0.2-4 </i> </a>';
+    var version = '<a href="../../changelog/"> <i> v1.0.2-5 </i> </a>';
     copyright_text.innerHTML = " &copy; Copyrights 2021 Axbecher. All rights reserved. " + version;
     
     var design_by_text = document.getElementById("design_by_footer");
