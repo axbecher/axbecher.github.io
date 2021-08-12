@@ -180,7 +180,7 @@
   */
     
     var copyright_text = document.getElementById("copyright_footer");
-    var version = '<a href="../../changelog/"> <i> v1.0.2-5 </i> </a>';
+    var version = '<a href="../../changelog/"> <i> v1.0.2-6 </i> </a>';
     copyright_text.innerHTML = " &copy; Copyrights 2021 Axbecher. All rights reserved. " + version;
     
     var design_by_text = document.getElementById("design_by_footer");
@@ -195,32 +195,28 @@
     if(document.getElementById("indexHeader")) { /* Home / Root / Index Header  '<li><a class="nav-link active  scrollto" href="../../#blog">Blog</a></li>'*/
   document.getElementById("indexHeader").innerHTML = 
                             '<li><a class="nav-link scrollto active" href="/">Home</a></li>' + 
-                            '<li><a class="nav-link scrollto" href="#about">About</a></li>' + 
-                            '<li><a class="nav-link scrollto" href="#portfolio">Portfolio</a></li>' + 
+                            '<li><a class="nav-link scrollto" href="#portfolio">Projects</a></li>' + 
                             '<li><a class="nav-link scrollto" href="#contact">Contact</a></li>';
 }  
     
     if(document.getElementById("portfolioHeader")) { /* Portfolio, viewhere,skillsdistrict,ecomweb  Header */
   document.getElementById("portfolioHeader").innerHTML = 
                             '<li><a class="nav-link scrollto" href="../../">Home</a></li>' + 
-                            '<li><a class="nav-link scrollto" href="../../#about">About</a></li>' + 
-                            '<li><a class="nav-link scrollto active" href="../../#portfolio">Portfolio</a></li>' + 
+                            '<li><a class="nav-link scrollto active" href="../../#portfolio">Projects</a></li>' + 
                             '<li><a class="nav-link scrollto" href="../../#contact">Contact</a></li>';
 }  
     
     if(document.getElementById("allArticlesHeader")) { /* Where are all Articles + changelog Header */
   document.getElementById("allArticlesHeader").innerHTML = 
                             '<li><a class="nav-link scrollto" href="../">Home</a></li>' + 
-                            '<li><a class="nav-link scrollto" href="../#about">About</a></li>' + 
-                            '<li><a class="nav-link scrollto active" href="../#portfolio">Portfolio</a></li>' + 
+                            '<li><a class="nav-link scrollto active" href="../#portfolio">Projects</a></li>' + 
                             '<li><a class="nav-link scrollto" href="../#contact">Contact</a></li>';
 }  
     
     if(document.getElementById("articleInfoHeader")) { /* Articles Info Header - Article 1, article 2 */
   document.getElementById("articleInfoHeader").innerHTML = 
                             '<li><a class="nav-link scrollto" href="../../">Home</a></li>' + 
-                            '<li><a class="nav-link scrollto" href="../../#about">About</a></li>' + 
-                            '<li><a class="nav-link scrollto" href="../../#portfolio">Portfolio</a></li>' + 
+                            '<li><a class="nav-link scrollto" href="../../#portfolio">Projects</a></li>' + 
                             '<li><a class="nav-link scrollto" href="../../#contact">Contact</a></li>';
 }  
     

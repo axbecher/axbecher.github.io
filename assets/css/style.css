@@ -3,6 +3,7 @@
     
     --main-dark-bg-color: #121212;
     --secondary-dark-bg-color: #222222;
+    --portfolio-bg-color: #130a04;
     --main-dark-txt-color: #F28500;
     --secondary-dark-txt-color: #808080;
     --third-dark-txt-color: #FFFDD0;
@@ -770,6 +771,7 @@ code{
 #portfolio {
   position: relative;
   padding-bottom: 50px;
+  background-color:var(--portfolio-bg-color);
 }
 
 
