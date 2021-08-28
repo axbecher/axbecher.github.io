@@ -76,17 +76,29 @@
    * Toggle .header-scrolled class to #header when page is scrolled
    */
   let selectHeader = select('#header')
+  let selectHeader2 = select('#header2')
   if (selectHeader) {
     const headerScrolled = () => {
-      if (window.scrollY > 100) {
+      if (window.scrollY > 40) {
         selectHeader.classList.add('header-scrolled')
       } else {
         selectHeader.classList.remove('header-scrolled')
       }
+      
     }
     window.addEventListener('load', headerScrolled)
     onscroll(document, headerScrolled)
   }
+  if (selectHeader2) {
+    const headerScrolled = () => {
+      if (window.scrollY >= 0) {
+        selectHeader2.classList.add('header-scrolled')
+      } 
+    }
+    window.addEventListener('load', headerScrolled)
+    onscroll(document, headerScrolled)
+  }
+
 
     /**
    * Skills animation
@@ -112,7 +124,7 @@
   let backtotop = select('.back-to-top')
   if (backtotop) {
     const toggleBacktotop = () => {
-      if (window.scrollY > 100) {
+      if (window.scrollY >= 100) {
         backtotop.classList.add('active')
       } else {
         backtotop.classList.remove('active')
@@ -180,12 +192,18 @@
   */
     
     var copyright_text = document.getElementById("copyright_footer");
-    var version = '<a href="../../changelog/"> <i> v1.0.2-6 </i> </a>';
-    copyright_text.innerHTML = " &copy; Copyrights 2021 Axbecher. All rights reserved. " + version;
+    var version = '<a href="../../changelog/"> <i> v1.0.3 </i> </a>';
+    if(document.getElementById("copyright_footer")){
+      copyright_text.innerHTML = " &copy; Copyrights 2021 Axbecher. All rights reserved. " + version;
+    }
+    
     
     var design_by_text = document.getElementById("design_by_footer");
-    design_by_text.innerHTML = 'Designed using <a class="link-footer-bootstrap" href="https://www.w3schools.com/bootstrap4/" target="_blank">Bootstrap 4</a>';
 
+    if(document.getElementById("design_by_footer")){
+      design_by_text.innerHTML = 'Designed using <a class="link-footer-bootstrap" href="https://www.w3schools.com/bootstrap4/" target="_blank">Bootstrap 4</a>';
+    }
+    
     /**
     * Header Controller
     */
@@ -195,29 +213,33 @@
     if(document.getElementById("indexHeader")) { /* Home / Root / Index Header  '<li><a class="nav-link active  scrollto" href="../../#blog">Blog</a></li>'*/
   document.getElementById("indexHeader").innerHTML = 
                             '<li><a class="nav-link scrollto active" href="/">Home</a></li>' + 
-                            '<li><a class="nav-link scrollto" href="#portfolio">Projects</a></li>' + 
-                            '<li><a class="nav-link scrollto" href="#contact">Contact</a></li>';
+                            '<li><a class="nav-link scrollto" href="/about/">About</a></li>' + 
+                            '<li><a class="nav-link scrollto axb" href="/portfolio/">Portfolio</a></li>' +
+                            '<li><a class="nav-link scrollto" href="/contact/">Contact</a></li>';
 }  
     
     if(document.getElementById("portfolioHeader")) { /* Portfolio, viewhere,skillsdistrict,ecomweb  Header */
   document.getElementById("portfolioHeader").innerHTML = 
-                            '<li><a class="nav-link scrollto" href="../../">Home</a></li>' + 
-                            '<li><a class="nav-link scrollto active" href="../../#portfolio">Projects</a></li>' + 
-                            '<li><a class="nav-link scrollto" href="../../#contact">Contact</a></li>';
+                            '<li><a class="nav-link scrollto active" href="../../">Home</a></li>' + 
+                            '<li><a class="nav-link scrollto" href="../../about/">About</a></li>' + 
+                            '<li><a class="nav-link scrollto axb" href="../../portfolio/">Portfolio</a></li>' +
+                            '<li><a class="nav-link scrollto" href="../../contact/">Contact</a></li>';
 }  
     
     if(document.getElementById("allArticlesHeader")) { /* Where are all Articles + changelog Header */
   document.getElementById("allArticlesHeader").innerHTML = 
-                            '<li><a class="nav-link scrollto" href="../">Home</a></li>' + 
-                            '<li><a class="nav-link scrollto active" href="../#portfolio">Projects</a></li>' + 
-                            '<li><a class="nav-link scrollto" href="../#contact">Contact</a></li>';
+                            '<li><a class="nav-link scrollto active" href="../">Home</a></li>' + 
+                            '<li><a class="nav-link scrollto" href="../about/">About</a></li>' + 
+                            '<li><a class="nav-link scrollto axb" href="../portfolio/">Portfolio</a></li>' +
+                            '<li><a class="nav-link scrollto" href="../contact/">Contact</a></li>';
 }  
     
     if(document.getElementById("articleInfoHeader")) { /* Articles Info Header - Article 1, article 2 */
   document.getElementById("articleInfoHeader").innerHTML = 
-                            '<li><a class="nav-link scrollto" href="../../">Home</a></li>' + 
-                            '<li><a class="nav-link scrollto" href="../../#portfolio">Projects</a></li>' + 
-                            '<li><a class="nav-link scrollto" href="../../#contact">Contact</a></li>';
+                            '<li><a class="nav-link scrollto active" href="../../">Home</a></li>' + 
+                            '<li><a class="nav-link scrollto" href="../../about/">About</a></li>' + 
+                            '<li><a class="nav-link scrollto" href="../../portfolio/">Portfolio</a></li>' +
+                            '<li><a class="nav-link scrollto" href="../../contact/">Contact</a></li>';
 }  
     
     
